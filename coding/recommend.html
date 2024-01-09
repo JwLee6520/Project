@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digilunch</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <h1>급식 메뉴 추천</h1>
+    <form action="우리가 보낼거">
+        <div class="Main">
+            <h3 >&nbsp;Main: <input type="text" name = "Main" placeholder = "ex) Lobster" required> <br></h3>   
+        </div>
+        <div class="Side">
+            <h3>&nbsp;Side: <input type="text" name = "side" placeholder = "ex) mashed potatoes" required><br></h3> 
+        </Side>
+        <div class="filebox">
+             
+           <input type="file" id="file-input" accept="image/*" onchange="previewImage(this)">
+            <label for="file-input" id="choose-file-btn">여기를 눌러 사진을 첨부해주세용!!</label>
+        </div>
+       
+        <div id="image-preview"></div>
+    </form>
+    <script>
+        function previewImage(input) {
+            var preview = document.getElementById('image-preview');
+            preview.innerHTML = '';
+
+            if (input.files && input.files[0]) {
+                var reader = new FileReader();
+
+                reader.onload = function (e) {
+                    var image = document.createElement('img');
+                    image.src = e.target.result;
+                    preview.appendChild(image);
+                };
+
+                reader.readAsDataURL(input.files[0]);
+            }
+        }
+    </script>
+    <h2><input type="submit" style="color: white;background-color: rgba(0, 147, 237, 1);border-radius: 20px;width: 327px;height: 66px;" value="추천하기" ></h2>       
+    
+</body>
+</html>

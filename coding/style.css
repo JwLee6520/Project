@@ -1,0 +1,49 @@
+
+
+h1{
+    color: rgba(0, 147, 237, 1);
+    text-align: center;
+}
+
+input {
+    border: none;
+    width:150px;
+    height: 50px;
+    font-size:18px;
+}
+
+h3{ 
+    
+    width: 327px;
+    color: rgba(0, 147, 237, 1);
+    border: 1.7px solid rgba(0, 147, 237, 1);
+    border-radius: 13px;
+}
+
+::placeholder{
+    background-color: white
+}
+.filebox label{
+        cursor: pointer;
+        width: 310px;
+        border: 2px solid rgba(0, 147, 237, 1);
+        border-radius: 16%;
+        text-align: center; 
+}
+.filebox input[type="file"] {
+    position: absolute;
+    width: 0;
+    height: 0;
+    padding: 0;
+    overflow: hidden;
+    border: 0;
+}
+#image-preview {
+    max-width: 300px;
+    margin: 20px auto;
+}
+
+#image-preview img {
+    max-width: 100%;
+    height: auto;
+}
