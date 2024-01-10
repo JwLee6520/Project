@@ -1,0 +1,39 @@
+h1{
+    color: rgba(0, 147, 237, 1);
+    text-align: center;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mager img {
+    display: block;
+    width: 210px;
+    height: 240px;
+    border-radius: 100px;
+    transition: all 0.25s linear;
+}
+
+.mager:hover img{
+    transform:  scale(1.1);
+}
+.food h1{
+    color: white;
+    background-color:rgba(0, 147, 237, 1);
+    width: 200px;
+    border-radius: 16px;
+}
+
+.sdh img{
+    width: 300px;
+    height: 100px;
+}
+.sdh h4{
+    text-align: center;
+    color: rgba(0, 147, 237, 1);
+    background-color: rgba(214, 245, 255, 1);
+    border-radius: 12px;
+    height: 30px;
+}
